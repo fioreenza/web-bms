@@ -15,9 +15,122 @@
 </head>
 <body id="home" class="relative h-full w-full bg-black overflow-x-hidden">
     <div class="absolute inset-0 bg-cover bg-no-repeat opacity-10" style="background-image: url('/images/paper.svg'); z-index: -1;"></div>
-    <section class="flex flex-col min-h-screen items-center justify-center relative">
-        <h1 class="text-[#C52525] relative z-10">Discover Our</h1>
-        <h1 class="text-white relative z-10">Journey</h1>
+    <navbar class="py-8 p-4 md:p-8 flex justify-center items-center gap-12 font-bold text-white text-xl">
+        <p class="cursor-pointer hover:text-[#ADE480] hover:-translate-y-1 hover:scale-110 transition-all ease-in-out duration-300 delay-150">Home</p>
+        <p class="cursor-pointer hover:text-[#ADE480] hover:-translate-y-1 hover:scale-110 transition-all ease-in-out duration-300 delay-150">Team</p>
+        <p class="cursor-pointer hover:text-[#ADE480] hover:-translate-y-1 hover:scale-110 transition-all ease-in-out duration-300 delay-150">Our Works</p>
+    </navbar>
+    
+    <section class="flex w-full min-h-screen items-center justify-center relative">
+        <div class="z-10 -mt-32 lg:-mt-8">
+        <h1 class="text-[#FF7171] font-semibold text-5xl sm:text-7xl lg:text-[90px] xl:text-8xl 2xl:text-[135px] text-center">Discover Our</h1>
+        <h1 class="text-[#2A99FF] font-semibold text-6xl mt-0 sm:text-8xl lg:text-[115px] xl:text-[135px] 2xl:text-[170px] lg:-mt-2 mr-4 text-right">Journey</h1>
+        <p class="text-[#fffff3] font-semibold text-sm mt-2 ml-4 tracking-[.2em] lg:-mt-2 sm:ml-10 sm:text-xl lg:text-2xl lg:tracking-[.25em] lg:ml-12 xl:tracking-[.16em] xl:text-3xl xl:ml-8 2xl:text-4xl 2xl:tracking-[.3em] 2xl:ml-12">in Basic Media Schooling</p>
+        <p class="text-[#fffff3] font-semibold mt-2 text-[9px] sm:text-[14px] lg:text-md 2xl:text-lg text-center italic">Unveil the power of media. Dive into our portfolio now.</p>
+        <div class="flex justify-center items-center mt-12">
+        <div class="relative inline-flex group flex">
+            <div
+                class="absolute transitions-all duration-1000 opacity-30 -inset-px bg-[#fffff3] rounded-xl blur-lg group-hover:opacity-50 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
+            </div>
+            <a href="#events" title="Learn More"
+                class="text-[12px] sm:text-[16px] 2xl:text-xl relative inline-flex items-center justify-center px-8 py-4 md:text-xl font-bold transition-all duration-200 bg-[#ADE480] text-[#2D2D2D] rounded-[30px]"
+                role="button">Explore Now
+            </a>
+        </div>
+        </div>
+        <Image src="images/nameyourlayers.png" class="hidden lg:block xl:hidden absolute w-72 -top-2 right-56"></Image>
+        <Image src="images/devmode.png" class="hidden lg:block xl:hidden absolute w-48 right-16 bottom-48"></Image>
+        <Image src="images/cursor.png" class="hidden lg:block xl:hidden absolute w-28 right-28 top-28"></Image>
+        <Image src="images/devmodeswitch.png" class="hidden lg:block xl:hidden absolute w-32 left-32 top-6"></Image>
+        <Image src="images/star.png" class="hidden lg:block xl:hidden absolute w-56 left-12 bottom-48"></Image>
+        
+        <Image src="images/nameyourlayers.png" class="hidden xl:block 2xl:hidden absolute w-72 -top-4 right-56"></Image>
+        <Image src="images/devmode.png" class="hidden xl:block 2xl:hidden absolute w-56 right-16 bottom-48"></Image>
+        <Image src="images/cursor.png" class="hidden xl:block 2xl:hidden absolute w-28 right-28 top-28"></Image>
+        <Image src="images/devmodeswitch.png" class="hidden xl:block 2xl:hidden absolute w-36 left-32 top-8"></Image>
+        <Image src="images/star.png" class="hidden xl:block 2xl:hidden absolute w-64 left-16 bottom-32"></Image>
+
+        <Image src="images/nameyourlayers.png" class="hidden 2xl:block absolute w-96 -top-2 right-56"></Image>
+        <Image src="images/devmode.png" class="hidden 2xl:block absolute w-72 right-16 bottom-56"></Image>
+        <Image src="images/cursor.png" class="hidden 2xl:block absolute w-36 right-28 top-56"></Image>
+        <Image src="images/devmodeswitch.png" class="hidden 2xl:block absolute w-48 left-32 top-8"></Image>
+        <Image src="images/star.png" class="hidden 2xl:block absolute w-72 left-16 bottom-48"></Image>
     </section>
+
+    <section class="flex flex-col w-full min-h-screen relative">
+        <h1 class="text-6xl text-center text-white font-semibold pt-12">Meet <span class="text-5xl">the</span> Team</h1>
+
+        <div class="flex flex-col lg:flex-row justify-center gap-12 pt-16 items-center">
+
+            <div class="bg-[#514C4C] h-96 w-64 rounded-2xl p-6 flex flex-col items-center relative z-10">
+                <div class="absolute inset-0 flex p-6 -z-10 items-end">
+                    <div class="bg-[#AA75FF] rounded-2xl rounded-br-none w-1/2 h-[100%]"></div>
+                    <div class="bg-[#AA75FF] rounded-2xl rounded-l-none w-1/2 h-[95%]"></div>
+                </div>
+                <div class="absolute inset-0 flex p-6 -z-10 items-end">
+                    <div class="bg-[#AA75FF] bg-[url('/images/paper2.png')] bg-cover bg-center opacity-30 rounded-2xl rounded-br-none w-1/2 h-[100%]"></div>
+                    <div class="bg-[#AA75FF] bg-[url('/images/paper2.png')] bg-cover bg-center opacity-30 rounded-2xl rounded-l-none w-1/2 h-[95%]"></div>
+                </div>
+                <div class="absolute bottom-8 h-64 w-52 rounded-full bg-[#2B1A55] blur-[55px] opacity-70 z-10"></div>
+                <div class="flex flex-col">
+                <Image src="/images/fio.png" class="z-20"></Image>
+                <div class="text-md font-semibold text-white text-center w-full pb-4 pt-4 z-20">
+                <p>Fiorenza Adelia Nalle</p>
+                <div class="flex justify-center gap-4 w-full text-sm">
+                <p>5027231053</p>
+                <p>Mojokerto</p>
+                </div>
+                </div>
+            </div>
+            <div class="bg-[#2B1A55] text-white px-6 rounded-xl text-[26px] font-semibold absolute -left-4 bottom-32 z-30">Fiorenza</div>
+            </div>
+            
+            <div class="bg-[#514C4C] h-96 w-64 rounded-2xl p-6 flex flex-col items-center relative z-10">
+                <div class="absolute inset-0 flex p-6 -z-10 items-end">
+                    <div class="bg-[#E14949] rounded-2xl w-full h-full"></div>
+                </div>
+                <div class="absolute inset-0 flex p-6 -z-10 items-end">
+                    <div class="bg-[#E14949] bg-[url('/images/paper2.png')] bg-cover bg-center opacity-30 rounded-2xl w-full h-full"></div>
+                </div>
+                <div class="absolute bottom-8 h-64 w-52 rounded-full bg-[#842A2A] blur-[55px] opacity-70 z-10"></div>
+                <div class="flex flex-col">
+                <Image src="/images/fidel.png" class="z-20"></Image>
+                <div class="text-md font-semibold text-white text-center w-full pb-4 pt-2 z-20">
+                <p>Danendra Fidel K.</p>
+                <div class="flex justify-center gap-4 w-full text-sm">
+                <p>5027231063</p>
+                <p>Semarang</p>
+                </div>
+                </div>
+            </div>
+            <div class="bg-[#842A2A] text-white px-12 rounded-xl text-[26px] font-semibold absolute -left-4 top-16 z-30">Fidel</div>
+            </div>
+
+            <div class="bg-[#514C4C] h-96 w-64 rounded-2xl p-6 flex items-center relative z-10">
+                <div class="absolute inset-0 flex p-6 -z-10 items-end">
+                    <div class="bg-[#3A99F0] rounded-2xl rounded-br-none w-1/2 h-[100%]"></div>
+                    <div class="bg-[#3A99F0] rounded-2xl rounded-l-none w-1/2 h-[95%]"></div>
+                </div>
+                <div class="absolute inset-0 flex p-6 -z-10 items-end">
+                    <div class="bg-[#7AB6ED] bg-[url('/images/paper2.png')] bg-cover bg-center opacity-30 rounded-2xl rounded-br-none w-1/2 h-[100%]"></div>
+                    <div class="bg-[#7AB6ED] bg-[url('/images/paper2.png')] bg-cover bg-center opacity-30 rounded-2xl rounded-l-none w-1/2 h-[95%]"></div>
+                </div>
+                <div class="absolute bottom-8 h-64 w-52 rounded-full bg-[#1A3555] blur-[55px] opacity-70 z-10"></div>
+                <div class="flex flex-col">
+                <Image src="/images/hildan.png" class="z-20"></Image>
+                <div class="text-md font-semibold text-white text-center w-full pb-4 pt-4 z-20">
+                <p>M. Hildan Adiwena</p>
+                <div class="flex justify-center gap-4 w-full text-sm">
+                <p>5027231077</p>
+                <p>Bontang</p>
+                </div>
+                </div>
+            </div>
+            <div class="bg-[#1A3555] text-white px-8 rounded-xl text-[26px] font-semibold absolute -left-4 bottom-32 z-30">Hildan</div>
+            </div>
+            
+        </div>
+    </section>
+
 </body>
 </html>
