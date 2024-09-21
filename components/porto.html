@@ -46,7 +46,7 @@
       <div class="space-y-4">
         <!-- Card 1: Basic Website -->
         <div
-          class="bg-gray-300 rounded-3xl p-4 flex flex-col md:flex-row items-center"
+          class="bg-gray-300 rounded-3xl p-5 flex flex-col md:flex-row items-center"
         >
           <div class="md:w-2/5 md:mr-4 mb-4 md:mb-0">
             <img
@@ -89,31 +89,38 @@
           class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4"
         >
           <!-- Photography Card -->
-          <div class="bg-gray-300 rounded-3xl p-4 md:w-1/2">
-            <img
-              src="/api/placeholder/400/200"
-              alt="Photography"
-              class="w-full h-32 object-cover rounded-lg mb-4"
-            />
-            <h3 class="text-lg font-bold mb-2">Photography</h3>
-            <p class="text-sm text-gray-800">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque dignissim ipsum augue, et hendrerit arcu ornare in.
-            </p>
-          </div>
+<div class="bg-gray-300 rounded-3xl p-4 md:w-1/2 flex items-center">
+  <!-- Image on the left side -->
+  <img
+    src="/api/placeholder/400/200"
+    alt="Photography"
+    class="w-1/2 h-32 object-cover rounded-lg mb-4 md:mb-0 md:mr-4"
+  />
 
-          <!-- Copywriting Card -->
-          <div class="bg-gray-300 rounded-3xl p-4 md:w-1/2">
-            <h3 class="text-lg font-bold mb-2">Copywriting</h3>
-            <p class="text-sm text-gray-800">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Pellentesque dignissim ipsum augue, et hendrerit arcu ornare in.
-            </p>
-            <button
-              class="mt-4 bg-gray-800 text-white px-4 py-2 rounded-lg text-sm"
-            >
-              Discover More
-            </button>
+  <!-- Text on the right side, centered vertically -->
+  <div class="text-center w-1/2">
+    <h3 class="text-lg font-bold mb-2">Photography</h3>
+    <p class="text-sm text-gray-800">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Pellentesque dignissim ipsum augue, et hendrerit arcu ornare in.
+    </p>
+  </div>
+</div>
+
+      <!-- Copywriting Card -->
+<div class="bg-gray-300 rounded-3xl p-4 md:w-1/2 text-center">
+  <h3 class="text-lg font-bold mb-2">Copywriting</h3>
+  <p class="text-sm text-gray-800">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Pellentesque dignissim ipsum augue, et hendrerit arcu ornare in. 
+  </p>
+  <button
+    class="mt-4 bg-gray-800 text-white px-4 py-2 rounded-lg text-sm"
+  >
+    Discover More
+  </button>
+</div>
+
           </div>
         </div>
       </div>
