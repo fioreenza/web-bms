@@ -28,9 +28,13 @@
           <a href="#" class="text-xl">Our Works</a>
         </li>
       </ul>
-      <button data-drawer-target=default-sidebar" data-drawer-toggle="default-sidebar" aria-controls="default-sidebar" type="button" class="m-3 inline-flex items-center p-2 text-md rounded-lg sm:hidden focus:outline-none"> [=] </button>
-      <aside id="default-sidebar" aria-label="Sidebar">
-        <ul class="bg-[#3d3d3d] place-content-left space-x-7 p-5 max-sm:max-2xl:hidden">
+      <button  class="m-3 p-2 text-md sm:hidden float-right" onclick="openNav()">[=]</button>
+      <aside id="sidebar" class="fixed top-0 right-0 w-0">
+        <ul class="bg-[#3d3d3d] place-content-left space-y-3 p-3 sm:hidden h-full">
+          <li class="text-md font-normal text-neutral-300 text-right">
+            <button type="button" class="" onclick="closeNav()">X</button>
+            <br />
+          </li>
           <li class="">
             <a href="#" class="text-xl">Home</a>
           </li>
@@ -43,5 +47,15 @@
         </ul>
       </aside>
     </nav>
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.width = "300px";
+        document.getElementById("sidebar").style.height = "100%";
+      }
+
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+      }
+    </script>
   </body>
 </html>
