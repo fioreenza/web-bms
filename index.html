@@ -15,12 +15,12 @@
     </style>
 </head>
 <body id="home" class="relative h-full w-full bg-black overflow-x-hidden">
-  <div id="loading" class="text-xl font-bold">Loading...</div>
+  <div id="loading">Loading...</div>
   <div id="content" class="hidden">
     <div class="absolute inset-0 bg-cover bg-no-repeat opacity-10" style="background-image: url('/images/paper.svg'); z-index: -1;"></div>
 
     <nav class="text-white  font-bold">
-        <ul class="flex place-content-center space-x-7 p-5 max-sm:max-2xl:hidden">
+        <ul class="bg-[#3d3d3d] flex place-content-center space-x-7 p-5 max-sm:max-2xl:hidden">
           <li class="">
             <a href="#" class="text-xl">Home</a>
           </li>
@@ -33,7 +33,7 @@
         </ul>
         <button  class="m-3 p-2 text-md sm:hidden float-right" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>
         <aside id="sidebar" class="fixed top-0 right-0 w-0">
-          <ul class="place-content-left space-y-6 p-3 sm:hidden h-full">
+          <ul class="bg-[#3d3d3d] place-content-left space-y-6 p-3 sm:hidden h-full">
             <li class="text-md font-normal text-neutral-300 text-right">
               <button type="button" class="" onclick="closeNav()">X</button>
               <br />
