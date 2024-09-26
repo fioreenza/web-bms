@@ -12,12 +12,15 @@
             font-family: 'Poppins', sans-serif;
             min-height: 400vh;
         }
+        .bg-lazy {
+            background-image: none;
+        }
     </style>
 </head>
 <body id="home" class="relative h-full w-full bg-black overflow-x-hidden">
   <div id="loading">Loading...</div>
   <div id="content" class="hidden">
-    <div class="absolute inset-0 bg-cover bg-no-repeat opacity-10" style="background-image: url('/images/paper.svg'); z-index: -1;"></div>
+    <div class="absolute inset-0 bg-cover bg-no-repeat bg-lazy opacity-10 z-[-1]" data-bg="/images/paper.svg"></div>
 
     <nav class="text-white  font-bold">
         <ul class="bg-[#3d3d3d] flex place-content-center space-x-7 p-5 max-sm:max-2xl:hidden">
@@ -843,23 +846,25 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
 </body>
 
 <script>
-  window.onload = function() {
-      const loading = document.getElementById('loading');
-      const content = document.getElementById('content');
-      const images = document.querySelectorAll('.lazy');
-      let loadedImages = 0;
+ window.onload = function() {
+    const loading = document.getElementById('loading');
+    const content = document.getElementById('content');
+    const images = document.querySelectorAll('.lazy');
+    const bgElement = document.querySelector('.bg-lazy');
+    let loadedImages = 0;
 
-      images.forEach((img) => {
-          img.onload = () => {
-              loadedImages++;
-              if (loadedImages === images.length) {
-                  // Sembunyikan loading dan tampilkan konten
-                  loading.classList.add('hidden');
-                  content.classList.remove('hidden');
-              }
-          };
-          img.src = img.src; // Memicu pemuatan gambar
-      });
-  };
+    images.forEach((img) => {
+        img.onload = () => {
+            loadedImages++;
+            if (loadedImages === images.length) {
+                bgElement.style.backgroundImage = "url('/images/paper.svg')"; 
+
+                loading.classList.add('hidden');
+                content.classList.remove('hidden');
+            }
+        };
+        img.src = img.src; 
+    });
+};
 </script>
 </html>
