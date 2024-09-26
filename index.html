@@ -15,10 +15,12 @@
     </style>
 </head>
 <body id="home" class="relative h-full w-full bg-black overflow-x-hidden">
+  <div id="loading" class="text-xl font-bold">Loading...</div>
+  <div id="content" class="hidden">
     <div class="absolute inset-0 bg-cover bg-no-repeat opacity-10" style="background-image: url('/images/paper.svg'); z-index: -1;"></div>
 
     <nav class="text-white  font-bold">
-        <ul class="bg-[#3d3d3d] flex place-content-center space-x-7 p-5 max-sm:max-2xl:hidden">
+        <ul class="flex place-content-center space-x-7 p-5 max-sm:max-2xl:hidden">
           <li class="">
             <a href="#" class="text-xl">Home</a>
           </li>
@@ -31,7 +33,7 @@
         </ul>
         <button  class="m-3 p-2 text-md sm:hidden float-right" onclick="openNav()"><i class="fa fa-bars" aria-hidden="true"></i></button>
         <aside id="sidebar" class="fixed top-0 right-0 w-0">
-          <ul class="bg-[#3d3d3d] place-content-left space-y-6 p-3 sm:hidden h-full">
+          <ul class="place-content-left space-y-6 p-3 sm:hidden h-full">
             <li class="text-md font-normal text-neutral-300 text-right">
               <button type="button" class="" onclick="closeNav()">X</button>
               <br />
@@ -206,7 +208,7 @@
             <img
                 src="/images/fio/website.png"
                 alt="Basic Website"
-                class="object-cover rounded-lg"
+                class="lazy object-cover rounded-lg"
               />
             <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Basic Website</h3>
             <p class="text-[12px] md:text-sm text-gray-800">In the recent BMS session, we learned about creating a basic website, starting with HTML and CSS. We also explored using Tailwind CSS, and finally, we covered basic Git commands and how to deploy our website to Vercel.</p>
@@ -215,7 +217,7 @@
             <img
                 src="/images/fio/design.png"
                 alt="Basic Website"
-                class="object-cover rounded-lg"
+                class="lazy object-cover rounded-lg"
               />
             <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Design with Figma</h3>
             <p class="text-[11px] md:text-sm text-gray-800">In the BMS session, we explored the fundamentals of design. After learning the basics, we were given the opportunity to practice by creating simple designs using Figma. This hands-on experience helped us understand how to implement design principles effectively in real projects.</p>
@@ -225,7 +227,7 @@
             <img
                 src="/images/fio/photography.png"
                 alt="Basic Website"
-                class="max-w-[60%] object-cover rounded-lg"
+                class="lazy max-w-[60%] object-cover rounded-lg"
               />
             </div>
             <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Photography</h3>
@@ -265,7 +267,7 @@
               <img
                 src="/images/fio/website.png"
                 alt="Basic Website"
-                class="w-fit h-fit object-cover rounded-lg"
+                class="lazy w-fit h-fit object-cover rounded-lg"
               />
             </div>
             <div class="w-2/5 ml-4 md:ml-8 flex flex-col justify-between text-left h-full">
@@ -284,7 +286,7 @@
               <img
                 src="/images/fio/design.png"
                 alt="Design with Figma"
-                class="w-fit h-fit object-cover rounded-lg"
+                class="lazy w-fit h-fit object-cover rounded-lg"
               />
             </div>
           </div>
@@ -297,7 +299,7 @@
               <img
                 src="/images/fio/photography.png"
                 alt="Photography"
-                class="h-56 object-cover rounded-lg"
+                class="lazy h-56 object-cover rounded-lg"
               />
               <div class="text-center w-full w-1/2 pl-4 flex flex-col justify-center">
                 <h3 class="text-lg font-bold mb-2 text-left">Photography</h3>
@@ -340,7 +342,7 @@
           <img
               src="/images/fidel/web.png"
               alt="Basic Website"
-              class="object-cover rounded-lg"
+              class="lazy object-cover rounded-lg"
             />
           <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Basic Website</h3>
           <p class="text-[12px] md:text-sm text-gray-800">Saya merancang landing page portofolio dengan sapaan "Hi, I’m Nadia," diikuti perkenalan sebagai arsitek junior dan desainer grafis lepas. Navigasi mencakup Home, About, Resume, Service, Portfolio, dan Contact. Bagian "ABOUT ME" berisi deskripsi singkat dan logo pribadi, dengan tombol untuk mengunduh CV dan portofolio. Desain ini visual menarik dan mudah dinavigasi.</p>
@@ -349,7 +351,7 @@
           <img
               src="/images/fidel/design.png"
               alt="Basic Website"
-              class="object-cover rounded-lg"
+              class="lazy object-cover rounded-lg"
             />
           <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Design with Figma</h3>
           <p class="text-[11px] md:text-sm text-gray-800">Saya merancang halaman web dengan navigasi sederhana berisi “HOME,” “ABOUT ME,” dan “LOGIN.” Bagian utama menampilkan judul “Holaaa… Everybody!!!” serta teks tentang inisiatif teknologi dan pengembangan masyarakat. Di sisi kiri, terdapat gambar kartu ID dan daftar staf “Staff of Public Relations A.S.O.” Desain ini mengutamakan estetika dan fungsionalitas untuk menyajikan informasi secara menarik.
@@ -360,7 +362,7 @@
           <img
               src="/images/fidel/photography.JPG"
               alt="Basic Website"
-              class="max-w-[60%] object-cover rounded-lg"
+              class="lazy max-w-[60%] object-cover rounded-lg"
             />
           </div>
           <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Photography</h3>
@@ -402,7 +404,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
             <img
               src="/images/fidel/web.png"
               alt="Basic Website"
-              class="w-fit h-fit object-cover rounded-3xl"
+              class="lazy w-fit h-fit object-cover rounded-3xl"
             />
           </div>
           <div class="w-2/5 ml-4 md:ml-8 flex flex-col justify-between text-left h-full">
@@ -426,7 +428,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
             <img
               src="/images/fidel/design.png"
               alt="Design with Figma"
-              class="w-fit h-fit object-cover rounded-3xl"
+              class="lazy w-fit h-fit object-cover rounded-3xl"
             />
           </div>
         </div>
@@ -442,7 +444,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
             <img
               src="/images/fidel/photography.JPG"
               alt="Photography"
-              class="h-56 object-cover rounded-3xl"
+              class="lazy h-56 object-cover rounded-3xl"
             />
             <div class="text-center w-full w-1/2 pl-4 flex flex-col justify-center">
               <h3 class="text-lg font-bold mb-2 text-left">Photography</h3>
@@ -484,7 +486,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
         <img
             src="/images/fio/website.png"
             alt="Basic Website"
-            class="object-cover rounded-lg"
+            class="lazy object-cover rounded-lg"
           />
         <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Basic Website</h3>
         <p class="text-[12px] md:text-sm text-gray-800">In the recent BMS session, we learned about creating a basic website, starting with HTML and CSS. We also explored using Tailwind CSS, and finally, we covered basic Git commands and how to deploy our website to Vercel.</p>
@@ -493,7 +495,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
         <img
             src="/images/fio/design.png"
             alt="Basic Website"
-            class="object-cover rounded-lg"
+            class="lazy object-cover rounded-lg"
           />
         <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Design with Figma</h3>
         <p class="text-[11px] md:text-sm text-gray-800">In the BMS session, we explored the fundamentals of design. After learning the basics, we were given the opportunity to practice by creating simple designs using Figma. This hands-on experience helped us understand how to implement design principles effectively in real projects.</p>
@@ -503,7 +505,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
         <img
             src="/images/fio/photography.png"
             alt="Basic Website"
-            class="max-w-[60%] object-cover rounded-lg"
+            class="lazy max-w-[60%] object-cover rounded-lg"
           />
         </div>
         <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Photography</h3>
@@ -544,7 +546,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
           <img
             src="/images/fio/website.png"
             alt="Basic Website"
-            class="w-fit h-fit object-cover rounded-lg"
+            class="lazy w-fit h-fit object-cover rounded-lg"
           />
         </div>
         <div class="w-2/5 ml-4 md:ml-8 flex flex-col justify-between text-left h-full">
@@ -565,7 +567,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
           <img
             src="/images/fio/design.png"
             alt="Design with Figma"
-            class="w-fit h-fit object-cover rounded-lg"
+            class="lazy w-fit h-fit object-cover rounded-lg"
           />
         </div>
       </div>
@@ -581,7 +583,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
           <img
             src="/images/fio/photography.png"
             alt="Photography"
-            class="h-56 object-cover rounded-lg"
+            class="lazy h-56 object-cover rounded-lg"
           />
           <div class="text-center w-full w-1/2 pl-4 flex flex-col justify-center">
             <h3 class="text-lg font-bold mb-2 text-left">Photography</h3>
@@ -625,7 +627,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
       <img
           src="/images/fio/website.png"
           alt="Basic Website"
-          class="object-cover rounded-lg"
+          class="lazy object-cover rounded-lg"
         />
       <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Basic Website</h3>
       <p class="text-[12px] md:text-sm text-gray-800">In the recent BMS session, we learned about creating a basic website, starting with HTML and CSS. We also explored using Tailwind CSS, and finally, we covered basic Git commands and how to deploy our website to Vercel.</p>
@@ -634,7 +636,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
       <img
           src="/images/fio/design.png"
           alt="Basic Website"
-          class="object-cover rounded-lg"
+          class="lazy object-cover rounded-lg"
         />
       <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Design with Figma</h3>
       <p class="text-[11px] md:text-sm text-gray-800">In the BMS session, we explored the fundamentals of design. After learning the basics, we were given the opportunity to practice by creating simple designs using Figma. This hands-on experience helped us understand how to implement design principles effectively in real projects.</p>
@@ -644,7 +646,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
       <img
           src="/images/fio/photography.png"
           alt="Basic Website"
-          class="max-w-[60%] object-cover rounded-lg"
+          class="lazy max-w-[60%] object-cover rounded-lg"
         />
       </div>
       <h3 class="text-lg mt-4 font-bold mb-2 block md:hidden">Photography</h3>
@@ -686,7 +688,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
         <img
           src="/images/fio/website.png"
           alt="Basic Website"
-          class="w-fit h-fit object-cover rounded-lg"
+          class="lazy w-fit h-fit object-cover rounded-lg"
         />
       </div>
       <div class="w-2/5 ml-4 md:ml-8 flex flex-col justify-between text-left h-full">
@@ -707,7 +709,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
         <img
           src="/images/fio/design.png"
           alt="Design with Figma"
-          class="w-fit h-fit object-cover rounded-lg"
+          class="lazy w-fit h-fit object-cover rounded-lg"
         />
       </div>
     </div>
@@ -723,7 +725,7 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
         <img
           src="/images/fio/photography.png"
           alt="Photography"
-          class="h-56 object-cover rounded-lg"
+          class="lazy h-56 object-cover rounded-lg"
         />
         <div class="text-center w-full w-1/2 pl-4 flex flex-col justify-center">
           <h3 class="text-lg font-bold mb-2 text-left">Photography</h3>
@@ -837,6 +839,27 @@ Saya mengembangkan materi copywriting untuk “Basic Media Schooling.” Slide p
 </div>
 
 </footer>
-
+</div>
 </body>
+
+<script>
+  window.onload = function() {
+      const loading = document.getElementById('loading');
+      const content = document.getElementById('content');
+      const images = document.querySelectorAll('.lazy');
+      let loadedImages = 0;
+
+      images.forEach((img) => {
+          img.onload = () => {
+              loadedImages++;
+              if (loadedImages === images.length) {
+                  // Sembunyikan loading dan tampilkan konten
+                  loading.classList.add('hidden');
+                  content.classList.remove('hidden');
+              }
+          };
+          img.src = img.src; // Memicu pemuatan gambar
+      });
+  };
+</script>
 </html>
